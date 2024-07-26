@@ -1,0 +1,85 @@
+.section {
+  &.hero {
+    &.style-one {
+      position: relative;
+      min-height: 502px;
+      color: white;
+      padding: 4.375rem 0;
+      background-color: $dark-blue;
+
+      .wp-image {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+
+        figure {
+          height: 100%;
+        }
+      }
+
+      .wp-text {
+        position: relative;
+        z-index: 2;
+
+        .section-title {
+          font-size: 2.125rem;
+          line-height: 130%;
+          color: white;
+        }
+      }
+    }
+
+    &.style-two {
+      position: relative;
+      min-height: 280px;
+      color: white;
+      padding: 4.375rem 0;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      .wp-content {
+        gap: 3rem;
+
+        .section-title {
+          font-size: 3.375rem;
+          line-height: 100%;
+          color: white;
+        }
+
+        p {
+          font-size: 1.375rem;
+          line-height: 100%;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &.style-three {
+      position: relative;
+      color: white;
+      padding: 4.5rem 0;
+      background-color: $dark-blue;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+
+      .wp-content {
+        gap: 3rem;
+
+        .section-title {
+          font-size: 3.375rem;
+        }
+
+        p {
+          font-size: 1.375rem;
+          line-height: 120%;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

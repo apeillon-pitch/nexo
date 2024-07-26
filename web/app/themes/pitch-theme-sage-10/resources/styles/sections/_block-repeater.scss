@@ -1,0 +1,51 @@
+.section {
+  &.block-repeater {
+    &.style-one {
+      .wp-content {
+        gap: 2.188rem;
+
+        .wp-item {
+          height: 100%;
+          gap: 0.5rem;
+          border: 0.5px solid $primary;
+          border-radius: 0.625rem;
+          padding: 1.5rem 0.2rem;
+
+          .title {
+            font-size: 1.25rem;
+          }
+
+          p {
+            font-size: 0.875rem;
+            line-height: 120%;
+            margin: 0 0.5rem;
+          }
+
+          figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+
+            img {
+              width: 70px;
+              height: auto;
+            }
+          }
+
+          &.major {
+            .title {
+              font-size: 1.875rem;
+            }
+
+            p {
+              font-size: 1.125rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.btn {
+  transition: 0.3s ease-out;
+
+  &.btn-secondary {
+    color: $primary;
+    border: 1px solid $primary;
+    background-color: white;
+  }
+
+  &.btn-tertiary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $primary;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    &::after {
+      content: url("../../images/arrow-blue.svg");
+      display: inline-block;
+      position: relative;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

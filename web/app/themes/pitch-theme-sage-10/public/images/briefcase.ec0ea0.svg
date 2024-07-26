@@ -1,0 +1,13 @@
+<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 4">
+<rect id="Rectangle 13" x="0.8" y="2.8" width="18.4" height="13.4" rx="1.2" stroke="white" stroke-width="1.6"/>
+<g id="Rectangle 14">
+<mask id="path-2-inside-1_3538_553" fill="white">
+<rect x="7" width="6" height="3.6" rx="1"/>
+</mask>
+<rect x="7" width="6" height="3.6" rx="1" stroke="white" stroke-width="3.2" mask="url(#path-2-inside-1_3538_553)"/>
+</g>
+<line id="Line 8" x1="1" y1="10.2" x2="19" y2="10.2" stroke="white" stroke-width="1.6"/>
+<line id="Line 9" x1="9" y1="11.2" x2="11" y2="11.2" stroke="white" stroke-width="1.6"/>
+</g>
+</svg>

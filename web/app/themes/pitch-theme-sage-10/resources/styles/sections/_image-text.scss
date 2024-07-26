@@ -1,0 +1,17 @@
+.section {
+  &.image-text {
+    &.style-one {
+      .wp-text {
+        gap: 1.5rem;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      figure {
+        height: 311px;
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.gform_wrapper {
+  form {
+    .gform-body {
+      .gform_fields {
+        .select2 {
+          .selection {
+            .select2-selection--single {
+              height: inherit;
+              border-radius: 0.625rem;
+              border: 1px solid $primary;
+              background: white;
+
+              .select2-selection__rendered {
+                padding: 10px 14px;
+              }
+            }
+          }
+        }
+
+        textarea {
+          max-height: 153px;
+          font-size: 1.125rem;
+          padding: 23px 14px;
+          border-radius: 0.625rem;
+          border: 1px solid $primary;
+          background: white;
+          box-shadow: none;
+          min-block-size: inherit;
+
+          &::-webkit-input-placeholder {
+            color: #858585;
+          }
+
+          &::-moz-placeholder {
+            color: #858585;
+          }
+
+          &:-ms-input-placeholder {
+            color: #858585;
+          }
+
+          &:-moz-placeholder {
+            color: #858585;
+          }
+        }
+
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+          outline: none;
+        }
+
+        input {
+          &[type="email"],
+          &[type="text"],
+          &[type="tel"] {
+            font-size: 1.125rem;
+            padding: 23px 14px;
+            border-radius: 0.625rem;
+            border: 1px solid $primary;
+            background: white;
+            box-shadow: none;
+
+            &::-webkit-input-placeholder {
+              color: #858585;
+            }
+
+            &::-moz-placeholder {
+              color: #858585;
+            }
+
+            &:-ms-input-placeholder {
+              color: #858585;
+            }
+
+            &:-moz-placeholder {
+              color: #858585;
+            }
+          }
+
+          &:focus,
+          &:focus-visible,
+          &:focus-within {
+            outline: none;
+          }
+        }
+      }
+
+      .gfield_required {
+        span {
+          display: none;
+        }
+
+        &::after {
+          content: "*";
+          display: block;
+          position: relative;
+          margin-left: -3px;
+          color: #858585;
+        }
+      }
+    }
+
+    input[type="submit"] {
+      display: block;
+      height: 50px;
+      border-radius: 5px;
+      margin: 0 auto !important;
+      background-color: $primary !important;
+    }
+  }
+}

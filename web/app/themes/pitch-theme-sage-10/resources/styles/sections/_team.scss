@@ -1,0 +1,100 @@
+.section {
+  &.team {
+    &.style-one {
+      .wp-content {
+        gap: 4rem;
+
+        .wp-item {
+          gap: 3rem;
+        }
+      }
+
+      .card-member {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 320px;
+        padding: 27px 38px;
+        justify-content: end;
+        border-radius: 0.625rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        overflow: hidden;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          bottom: 0;
+          background: linear-gradient(180deg, rgba(20, 45, 94, 0%) 48.28%, #142d5e 100%);
+        }
+
+        span {
+          position: relative;
+          z-index: 88;
+          font-family: $dm;
+          color: white;
+          text-align: center;
+
+          &.name {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+          }
+        }
+      }
+
+      .modal {
+        .thumbnail {
+          width: 177px;
+          height: 212px;
+          border-radius: 0.625rem;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+
+        .modal-header {
+          border: none;
+          padding: 1rem 1rem 0;
+
+          .btn-close {
+            color: white;
+            opacity: 1;
+            border-radius: 0.625rem;
+            border: 2px solid white;
+          }
+
+          .wp-content {
+            font-family: $dm;
+            color: white;
+            padding: 0.813rem;
+            border-radius: 0.625rem;
+            background-color: $primary;
+          }
+
+          .wp-header {
+            gap: 1.25rem;
+          }
+
+          .modal-title {
+            font-size: 34px;
+            margin-bottom: 0.5rem;
+          }
+
+          span {
+            font-size: 0.975rem;
+          }
+        }
+
+        .modal-body {
+          padding: 2.5rem 6.125rem 1.5rem;
+        }
+      }
+    }
+  }
+}

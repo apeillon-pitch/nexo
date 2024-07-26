@@ -1,0 +1,66 @@
+.section {
+  &.slideshow {
+    &.style-one {
+      overflow: hidden;
+
+      .section-title {
+        margin-bottom: 3rem;
+      }
+
+      .slideshow {
+        .slick-list {
+          overflow: visible;
+
+          .slick-track {
+            gap: 1.5rem;
+
+            &::before,
+            &::after {
+              content: none;
+            }
+
+            .slide {
+              padding: 1.5rem 1rem;
+              border-radius: 0.625rem;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              background-image: url("../../images/bg-frise.png");
+
+              .wp-item {
+                gap: 1.5rem;
+
+                .wp-heading {
+                  gap: 3px;
+                }
+              }
+
+              .overtitle,
+              .title,
+              p {
+                color: white;
+              }
+
+              .overtitle {
+                font-family: $dm;
+                font-size: 2.375rem;
+                line-height: 100%;
+              }
+
+              .title {
+                font-size: 1.375rem;
+                line-height: 100%;
+              }
+
+              .wp-text {
+                p:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

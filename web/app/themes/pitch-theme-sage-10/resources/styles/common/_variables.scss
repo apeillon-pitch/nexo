@@ -1,0 +1,38 @@
+/** Fonts */
+$dm: "DM Serif Text", serif;
+$source: "Source Sans 3", sans-serif;
+
+/** Colors */
+$dark-blue: #142d5e;
+
+$primary: $dark-blue;
+
+/** Menu mobile */
+$mobile-bg-mask: #777;
+$mobile-nav-item-color: black;
+$mobile-nav-item-color-hover: blue;
+$mobile-bg-dropdown-menu: white;
+$mobile-dropdown-nav-item-color: black;
+$mobile-dropdown-nav-item-color-hover: white;
+
+/** Buttons */
+$btn-font-size: 1rem;
+$btn-line-height: normal;
+$btn-border-radius: 0.313rem;
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 1.375rem;
+$btn-font-weight: 500;
+
+/** Grid */
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1140px
+);
+
+/** Modal */
+$modal-backdrop-bg: $primary;
+$modal-backdrop-opacity: 90%;
+$btn-close-color: white;

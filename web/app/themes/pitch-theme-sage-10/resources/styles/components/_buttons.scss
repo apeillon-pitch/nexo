@@ -22,20 +22,31 @@
   }
 
   &.btn-tertiary {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     color: $primary;
-    padding: 0;
+    padding: 0 24px 0 0;
     border: none;
     background-color: transparent;
 
     &::after {
       content: url("../../images/arrow-blue.svg");
       display: inline-block;
-      position: relative;
+      position: absolute;
       width: 24px;
       height: 24px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all ease-in-out 0.3s;
+    }
+
+    &:hover {
+      &::after {
+        right: -3px;
+      }
     }
   }
 }

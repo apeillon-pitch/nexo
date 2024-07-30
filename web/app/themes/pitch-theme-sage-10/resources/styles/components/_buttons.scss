@@ -40,12 +40,12 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      transition: all ease-in-out 0.3s;
+      transition: all ease-in-out 0.2s;
     }
 
     &:hover {
       &::after {
-        right: -3px;
+        right: -4px;
       }
     }
   }

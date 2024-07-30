@@ -11,12 +11,12 @@
             @if($loop->iteration === 1)
               <div class="col-7">
                 <div class="card-one h-100" style="background-image: url({{ $item['bg_image']['url'] }})">
-                  <div class="d-flex flex-column">
+                  <div class="d-flex flex-column h-100 justify-content-between">
                     @if ($item['title_group']['title'])
                       @include('partials.template-parts.title', ['item' => $item['title_group'], 'class' => 'title'])
                     @endif
                     @if($item['image'])
-                      <figure class="mb-0">
+                      <figure class="mb-0 mt-2">
                         {!! wp_get_attachment_image($item['image']['id'], 'medium', '', array("class" => "img-fluid")) !!}
                       </figure>
                     @endif
@@ -26,22 +26,22 @@
             @elseif($loop->iteration === 2)
               <div class="col-5">
                 <div class="card-two" style="background-image: url({{ $item['bg_image']['url'] }})">
-                  <div class="d-flex flex-column">
+                  <div class="d-flex flex-column h-100 justify-content-between">
                     @if($item['image'])
                       <figure class="mb-0">
                         {!! wp_get_attachment_image($item['image']['id'], 'medium', '', array("class" => "img-fluid")) !!}
                       </figure>
                     @endif
                     @if ($item['title_group']['title'])
-                      @include('partials.template-parts.title', ['item' => $item['title_group'], 'class' => 'title'])
+                      @include('partials.template-parts.title', ['item' => $item['title_group'], 'class' => 'title mt-2'])
                     @endif
                   </div>
                 </div>
               </div>
             @elseif($loop->iteration === 3)
               <div class="col-5">
-                <div class="card-three" style="background-image: url({{ $item['bg_image']['url'] }})">
-                  <div class="d-flex flex-row align-items-end">
+                <div class="card-three h-100" style="background-image: url({{ $item['bg_image']['url'] }})">
+                  <div class="d-flex flex-row h-100 align-items-end">
                     @if ($item['title_group']['title'])
                       @include('partials.template-parts.title', ['item' => $item['title_group'], 'class' => 'title'])
                     @endif
@@ -55,14 +55,14 @@
               </div>
             @elseif($loop->iteration === 4)
               <div class="col-7">
-                <div class="card-four" style="background-image: url({{ $item['bg_image']['url'] }})">
-                  <div class="d-flex flex-column">
+                <div class="card-four h-100" style="background-image: url({{ $item['bg_image']['url'] }})">
+                  <div class="d-flex flex-column h-100 justify-content-between">
                     @if ($item['title_group']['title'])
-                      @include('partials.template-parts.title', ['item' => $item['title_group'], 'class' => 'title'])
+                      @include('partials.template-parts.title', ['item' => $item['title_group'], 'class' => 'title me-5 mb-2'])
                     @endif
                     @if($item['image'])
                       <figure class="mb-0">
-                        {!! wp_get_attachment_image($item['image']['id'], 'medium', '', array("class" => "img-fluid")) !!}
+                        {!! wp_get_attachment_image($item['image']['id'], 'medium', '', array("class" => "d-block mx-auto img-fluid")) !!}
                       </figure>
                     @endif
                   </div>

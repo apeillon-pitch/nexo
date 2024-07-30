@@ -12,7 +12,7 @@
 <div id="section-{{ $row }}" class="section banner-cta style-one {{ $options['oclasses'] }}">
   <div class="container">
     <div class="wp-content d-flex flex-column justify-content-center"
-         style="background-image: url({{ $data['bg_image']['url'] }})">
+         style="background-image: url({{ $data['bg_image']['sizes']['large'] }})">
       <div class="row justify-content-center align-items-center">
         <div class="col-12 col-lg-6 ">
           <div class="d-flex flex-column wp-text align-items-center text-center">

@@ -20,6 +20,12 @@
         left: 0;
         top: 0;
 
+        @include media-breakpoint-down(lg) {
+          height: 30%;
+          bottom: 0;
+          top: inherit;
+        }
+
         figure {
           height: 100%;
         }

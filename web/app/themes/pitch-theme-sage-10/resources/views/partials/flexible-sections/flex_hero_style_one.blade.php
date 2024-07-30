@@ -4,7 +4,8 @@
       <div class="col-12 col-lg-6 h-100">
         @if($section['image'])
           <figure class="cover mb-0">
-            {!! wp_get_attachment_image($section['image']['id'], 'large', '', array("class" => "")) !!}
+            {!! wp_get_attachment_image($section['image']['id'], 'large', '', array("class" => "d-none d-lg-block")) !!}
+            {!! wp_get_attachment_image($section['image_mobile']['id'], 'large', '', array("class" => "d-block d-lg-none")) !!}
           </figure>
         @endif
       </div>

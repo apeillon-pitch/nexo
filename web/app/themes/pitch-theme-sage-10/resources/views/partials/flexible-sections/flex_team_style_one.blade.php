@@ -35,7 +35,7 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <div class="d-flex flex-row justify-content-between w-100 wp-content">
+              <div class="d-flex flex-column flex-md-row justify-content-between w-100 wp-content">
                 <div class="d-flex flex-row">
                   @if($member['picture'])
                     <div class="thumbnail me-4"

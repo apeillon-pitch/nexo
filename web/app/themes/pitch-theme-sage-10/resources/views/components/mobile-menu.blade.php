@@ -18,6 +18,14 @@
         {!! wp_nav_menu($mainMenu) !!}
       @endif
     </nav>
+    <div class="d-flex flex-column wp-cta mt-5">
+      @foreach($header['data']['cta_repeater'] as $item)
+        <a href="{{ $item['link']['url'] }}" class="d-flex btn btn-{{ $item['class'] }} justify-content-center mb-4"
+           aria-label="{!! $item['link']['title'] !!}" target="{{ $item['link']['target'] }}">
+          {!! $item['link']['title'] !!}
+        </a>
+      @endforeach
+    </div>
   </div>
 </div>
 <div id="c-mask" class="c-mask"></div>

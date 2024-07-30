@@ -45,8 +45,8 @@
     <div class="d-flex flex-column flex-lg-row justify-content-between wp-legal">
       <span>Copyright © 2024 Nexo Capital - Tous droits réservés.</span>
       <div class="d-flex flex-row wp-links mt-3 mt-lg-0">
-        <a href="">Mentions légales</a>
-        <a href="">Données personnelles</a>
+        <a href="#" aria-label="Mentions légales">Mentions légales</a>
+        <a href="#" aria-label="Données personnelles">Données personnelles</a>
       </div>
     </div>
   </div>

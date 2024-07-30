@@ -14,17 +14,6 @@
           min-height: 167px;
         }
 
-        .mask {
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          left: 0;
-          top: 0;
-          z-index: 1;
-          border-radius: 0.625rem;
-          background-color: rgba(20, 45, 94, 80%);
-        }
-
         .wp-text {
           position: relative;
           z-index: 8;

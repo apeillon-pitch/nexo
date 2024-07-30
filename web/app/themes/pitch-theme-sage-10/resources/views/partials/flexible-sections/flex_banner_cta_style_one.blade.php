@@ -13,7 +13,6 @@
   <div class="container">
     <div class="wp-content d-flex flex-column justify-content-center"
          style="background-image: url({{ $data['bg_image']['url'] }})">
-      <div class="mask"></div>
       <div class="row justify-content-center align-items-center">
         <div class="col-12 col-lg-6 ">
           <div class="d-flex flex-column wp-text align-items-center text-center">

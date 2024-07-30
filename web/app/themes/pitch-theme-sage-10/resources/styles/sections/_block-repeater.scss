@@ -67,4 +67,45 @@
       }
     }
   }
+
+  &.four-blocks {
+    .wp-list {
+      --bs-gutter-y: 1.5rem;
+    }
+
+    .card-one,
+    .card-two,
+    .card-three,
+    .card-four {
+      border-radius: 0.938rem;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-color: $primary;
+
+      .title {
+        font-size: 2.125rem;
+        color: white;
+      }
+    }
+
+    .card-one {
+      padding: 0.875rem;
+    }
+
+    .card-two {
+      padding: 0.875rem 0 0.875rem 0.875rem;
+    }
+
+    .card-three {
+      .title {
+        margin-bottom: 0.875rem;
+      }
+    }
+
+    .card-four,
+    .card-three {
+      padding: 0.875rem 0.875rem 0;
+    }
+  }
 }

@@ -24,6 +24,10 @@ footer {
     padding-top: 1.5rem;
     border-top: 1px solid $primary;
 
+    @include media-breakpoint-down(lg) {
+      margin-top: 1.5rem;
+    }
+
     a {
       text-decoration: none;
     }

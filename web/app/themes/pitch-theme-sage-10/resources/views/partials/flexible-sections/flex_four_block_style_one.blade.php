@@ -9,7 +9,7 @@
         <div class="row wp-list">
           @foreach($section['item_repeater'] as $item)
             @if($loop->iteration === 1)
-              <div class="col-7">
+              <div class="col-12 col-md-7">
                 <div class="card-one h-100" style="background-image: url({{ $item['bg_image']['url'] }})">
                   <div class="d-flex flex-column h-100 justify-content-between">
                     @if ($item['title_group']['title'])
@@ -24,7 +24,7 @@
                 </div>
               </div>
             @elseif($loop->iteration === 2)
-              <div class="col-5">
+              <div class="col-12 col-md-5">
                 <div class="card-two" style="background-image: url({{ $item['bg_image']['url'] }})">
                   <div class="d-flex flex-column h-100 justify-content-between">
                     @if($item['image'])
@@ -39,7 +39,7 @@
                 </div>
               </div>
             @elseif($loop->iteration === 3)
-              <div class="col-5">
+              <div class="col-12 col-md-5">
                 <div class="card-three h-100" style="background-image: url({{ $item['bg_image']['url'] }})">
                   <div class="d-flex flex-row h-100 align-items-end">
                     @if ($item['title_group']['title'])
@@ -54,7 +54,7 @@
                 </div>
               </div>
             @elseif($loop->iteration === 4)
-              <div class="col-7">
+              <div class="col-12 col-md-7">
                 <div class="card-four h-100" style="background-image: url({{ $item['bg_image']['url'] }})">
                   <div class="d-flex flex-column h-100 justify-content-between">
                     @if ($item['title_group']['title'])

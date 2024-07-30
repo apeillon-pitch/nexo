@@ -10,6 +10,10 @@
         background-repeat: no-repeat;
         background-position: center center;
 
+        @include media-breakpoint-down(sm) {
+          min-height: 167px;
+        }
+
         .mask {
           position: absolute;
           height: 100%;
@@ -29,6 +33,10 @@
           .section-title {
             color: white;
             font-size: 2.125rem;
+
+            @include media-breakpoint-down(sm) {
+              font-size: 1.25rem;
+            }
           }
         }
       }

@@ -11,7 +11,7 @@
         @else
           @php $class = 'major' @endphp
         @endif
-        <div class="row">
+        <div class="row wp-list">
           @foreach($section['item_repeater'] as $item)
             @include('partials.template-parts.block-repeater.style-one', ['item' => $item, 'class' => $class])
           @endforeach

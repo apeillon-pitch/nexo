@@ -9,4 +9,8 @@
 
 .section-title {
   font-size: 2.375rem;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 1.25rem;
+  }
 }

@@ -5,7 +5,6 @@
         <a href="{{ home_url() }}" aria-label="Accueil">
           {!! wp_get_attachment_image( $header['data']['logo']['id'], 'large','', array( "class" => "")) !!}
         </a>
-        <p></p>
       </div>
     @endif
     @if (has_nav_menu('primary_navigation'))
@@ -18,13 +17,13 @@
     <div class="d-flex flex-row align-items-center">
       <div class="d-flex flex-row wp-cta">
         @foreach($header['data']['cta_repeater'] as $item)
-          <a href="{{ $item['link']['url'] }}" class="btn btn-{{ $item['class'] }} ms-4"
+          <a href="{{ $item['link']['url'] }}" class="d-none d-md-flex btn btn-{{ $item['class'] }} ms-4"
              aria-label="{!! $item['link']['title'] !!}" target="{{ $item['link']['target'] }}">
             {!! $item['link']['title'] !!}
           </a>
         @endforeach
       </div>
-      <div class="d-flex d-xl-none">
+      <div class="d-flex d-xl-none ms-4">
         <div id="menu-button">
           <div class="c-buttons">
             <a href="#" rel="nofollow noindex" id="c-button--slide-right" aria-label="Menu" class="hamburger c-button">

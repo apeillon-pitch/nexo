@@ -1,6 +1,18 @@
 .section {
   &.team {
     &.style-one {
+      .slideshow {
+        .slick-track {
+          margin-left: 0;
+          gap: 1rem;
+
+          &::before,
+          &::after {
+            content: none;
+          }
+        }
+      }
+
       .wp-content {
         gap: 4rem;
 

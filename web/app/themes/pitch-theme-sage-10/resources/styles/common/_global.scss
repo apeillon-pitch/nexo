@@ -13,10 +13,18 @@ body {
   .section {
     &.pt-default {
       padding-top: 2rem;
+
+      @include media-breakpoint-down(sm) {
+        padding-top: 1.563rem;
+      }
     }
 
     &.pb-default {
       padding-bottom: 2rem;
+
+      @include media-breakpoint-down(sm) {
+        padding-bottom: 1.563rem;
+      }
     }
 
     &.pt-medium {

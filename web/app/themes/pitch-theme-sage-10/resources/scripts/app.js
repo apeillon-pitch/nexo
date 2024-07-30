@@ -18,10 +18,54 @@ const main = async (err) => {
     console.error(err);
   }
 
+  slideshowTeam();
   slideshowStyleOne();
   setSelect2();
   dropdownMenu();
   getStickyMenu();
+
+  function slideshowTeam() {
+    $('.section.team').each(function () {
+      var $section = $(this);
+      var $slideshow = $($section).find('.slideshow');
+
+      if (!$slideshow.hasClass('slick-initialized')) {
+        $slideshow.slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          dots: false,
+          infinite: false,
+          arrows: false,
+          autoplay: false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      }
+    });
+  }
 
   function slideshowStyleOne() {
     $('.section.slideshow.style-one').each(function () {
@@ -36,6 +80,31 @@ const main = async (err) => {
           infinite: false,
           arrows: false,
           autoplay: false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
         });
       }
     });

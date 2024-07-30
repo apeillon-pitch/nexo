@@ -1,4 +1,4 @@
-<div class="col">
+<div class="col-12 col-sm">
   <div class="d-flex flex-column align-items-center wp-item {{ $class }}">
     @if($item['icon'])
       <figure class="mb-0">

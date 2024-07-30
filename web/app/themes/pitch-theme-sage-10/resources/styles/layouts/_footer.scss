@@ -1,5 +1,5 @@
 footer {
-  padding: 3.75rem 0 2.5rem;
+  padding: 3.75rem 0 1.5rem;
 
   .wp-links {
     gap: 1rem;
@@ -17,5 +17,52 @@ footer {
 
   .wp-cta {
     gap: 1rem;
+  }
+
+  .wp-legal {
+    margin-top: 0.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid $primary;
+
+    a {
+      text-decoration: none;
+    }
+
+    .wp-links {
+      gap: 0;
+
+      a {
+        position: relative;
+        color: $black;
+        font-weight: 400;
+        padding-right: 1rem;
+        margin-right: 1rem;
+
+        &:hover {
+          color: $primary;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          height: 100%;
+          width: 1px;
+          top: 50%;
+          transform: translateY(-50%);
+          margin: 0 1rem;
+          background-color: $primary;
+        }
+
+        &:last-child {
+          padding-right: 0;
+          margin-right: 0;
+
+          &::after {
+            content: none;
+          }
+        }
+      }
+    }
   }
 }

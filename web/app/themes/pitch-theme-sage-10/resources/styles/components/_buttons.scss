@@ -1,10 +1,24 @@
 .btn {
   transition: 0.3s ease-out;
 
+  &.btn-primary {
+    &:hover {
+      color: $primary;
+      border: 1px solid $primary;
+      background-color: white;
+    }
+  }
+
   &.btn-secondary {
     color: $primary;
     border: 1px solid $primary;
     background-color: white;
+
+    &:hover {
+      color: white;
+      border: 1px solid $primary;
+      background-color: $primary;
+    }
   }
 
   &.btn-tertiary {

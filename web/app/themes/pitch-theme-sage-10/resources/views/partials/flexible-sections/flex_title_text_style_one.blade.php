@@ -5,13 +5,13 @@
       <div class="col-12 col-lg-9 col-xl-10 col-xxl-9">
         <div class="d-flex flex-column wp-text">
           @if ($section['title_group']['title'])
-            @include('partials.template-parts.title', ['item' => $section['title_group'], 'class' => 'section-title'])
+            @include('partials.template-parts.title', ['item' => $section['title_group'], 'class' => 'section-title mb-4'])
           @endif
           @if($section['text'])
             {!! $section['text'] !!}
           @endif
           @if($section['cta_repeater'])
-            <div class="d-flex flex-row wp-cta">
+            <div class="d-flex flex-row wp-cta mt-4">
               @foreach($section['cta_repeater'] as $cta)
                 <a href="{{ $cta['link']['url'] }}"
                    target="{{ $cta['link']['target'] }}"

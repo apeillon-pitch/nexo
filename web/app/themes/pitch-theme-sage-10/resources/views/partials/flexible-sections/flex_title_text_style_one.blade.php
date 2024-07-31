@@ -11,7 +11,7 @@
             {!! $section['text'] !!}
           @endif
           @if($section['cta_repeater'])
-            <div class="d-flex flex-row wp-cta mt-4">
+            <div class="d-flex flex-row wp-cta mt-3">
               @foreach($section['cta_repeater'] as $cta)
                 <a href="{{ $cta['link']['url'] }}"
                    target="{{ $cta['link']['target'] }}"

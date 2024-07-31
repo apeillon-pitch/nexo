@@ -36,7 +36,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <div class="d-flex flex-row justify-content-between w-100 wp-content">
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column flex-lg-row">
                   @if($member['picture'])
                     <div class="thumbnail me-4"
                          style="background-image: url({{ $member['picture'] }})"></div>

@@ -41,7 +41,7 @@
                     <div class="thumbnail me-4"
                          style="background-image: url({{ $member['picture'] }})"></div>
                   @endif
-                  <div class="d-flex flex-column flex-lg-row wp-header">
+                  <div class="d-flex flex-column wp-header">
                     <h3 class="modal-title mt-2" id="exampleModalLabel">{!! $member['title'] !!}</h3>
                     @if($member['job'])
                       <div class="d-flex flex-row">

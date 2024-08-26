@@ -12,12 +12,16 @@
               <div class="col-12 col-md-7">
                 <div class="card-one h-100" style="background-image: url({{ $item['bg_image']['url'] }})">
                   <div class="d-flex flex-column h-100 justify-content-between">
-                    @if ($item['title_group']['title'])
-                      @include('partials.template-parts.title', ['item' => $item['title_group'], 'class' => 'title'])
-                    @endif
+                    <div class="row">
+                      <div class="col-12 col-lg-10 col-xl-9 col-xxl-8">
+                        @if ($item['title_group']['title'])
+                          @include('partials.template-parts.title', ['item' => $item['title_group'], 'class' => 'title'])
+                        @endif
+                      </div>
+                    </div>
                     @if($item['image'])
-                      <figure class="mb-0 mt-2">
-                        {!! wp_get_attachment_image($item['image']['id'], 'medium', '', array("class" => "img-fluid")) !!}
+                      <figure class="mb-0 mt-3">
+                        {!! wp_get_attachment_image($item['image']['id'], 'large', '', array("class" => "img-fluid")) !!}
                       </figure>
                     @endif
                   </div>
@@ -25,15 +29,15 @@
               </div>
             @elseif($loop->iteration === 2)
               <div class="col-12 col-md-5">
-                <div class="card-two" style="background-image: url({{ $item['bg_image']['url'] }})">
+                <div class="card-two h-100" style="background-image: url({{ $item['bg_image']['url'] }})">
                   <div class="d-flex flex-column h-100 justify-content-between">
                     @if($item['image'])
                       <figure class="mb-0">
-                        {!! wp_get_attachment_image($item['image']['id'], 'medium', '', array("class" => "img-fluid")) !!}
+                        {!! wp_get_attachment_image($item['image']['id'], 'large', '', array("class" => "img-fluid")) !!}
                       </figure>
                     @endif
                     @if ($item['title_group']['title'])
-                      @include('partials.template-parts.title', ['item' => $item['title_group'], 'class' => 'title mt-2'])
+                      @include('partials.template-parts.title', ['item' => $item['title_group'], 'class' => 'title'])
                     @endif
                   </div>
                 </div>

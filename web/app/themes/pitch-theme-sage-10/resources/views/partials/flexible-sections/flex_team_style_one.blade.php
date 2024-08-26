@@ -37,7 +37,6 @@
   @php $i = 0 @endphp
   @foreach($section['item_repeater'] as $item)
     @if($item['team'])
-      @php $i = 0 @endphp
       @foreach($item['team'] as $el)
         @php $member = getMemberById($el); @endphp
         <div class="modal fade" id="teamModal-{{ $i }}-{{ $loop->iteration }}" tabindex="-1"
@@ -94,6 +93,6 @@
         </div>
       @endforeach
     @endif
-    @php $i++@endphp
+    @php $i++ @endphp
   @endforeach
 </div>

@@ -2,6 +2,7 @@
 <div id="section-{{ $row }}" class="section team style-one {{ $options['oclasses'] }}">
   <div class="container">
     <div class="d-flex flex-column wp-content">
+      @php $i = 0 @endphp
       @foreach($section['item_repeater'] as $item)
         <div class="d-flex flex-column wp-item">
           @if($item['title_group']['title'])
@@ -19,7 +20,7 @@
                       <span class="name mb-3">{!! $member['title'] !!}</span>
                       <div>
                         <a href="#" class="btn btn-secondary" data-bs-toggle="modal"
-                           data-bs-target="#teamModal-{{ $loop->iteration }}">En savoir
+                           data-bs-target="#teamModal-{{ $i }}-{{ $loop->iteration }}">En savoir
                           plus</a>
                       </div>
                     </div>
@@ -29,6 +30,7 @@
             </div>
           @endif
         </div>
+        @php $i++@endphp
       @endforeach
     </div>
   </div>

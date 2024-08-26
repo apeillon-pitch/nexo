@@ -118,6 +118,7 @@ const main = async (err) => {
   function setSelect2() {
     $('.ginput_container_select select').select2({
       minimumResultsForSearch: Infinity,
+      placeholder: 'Votre demande concerne',
     });
   }
 

@@ -51,7 +51,7 @@
                     @endif
                     @if($item['image'])
                       <figure class="mb-0">
-                        {!! wp_get_attachment_image($item['image']['id'], 'medium', '', array("class" => "img-fluid")) !!}
+                        {!! wp_get_attachment_image($item['image']['id'], 'large', '', array("class" => "img-fluid")) !!}
                       </figure>
                     @endif
                   </div>
@@ -66,7 +66,7 @@
                     @endif
                     @if($item['image'])
                       <figure class="mb-0">
-                        {!! wp_get_attachment_image($item['image']['id'], 'medium', '', array("class" => "d-block mx-auto img-fluid")) !!}
+                        {!! wp_get_attachment_image($item['image']['id'], 'large', '', array("class" => "d-block mx-auto img-fluid")) !!}
                       </figure>
                     @endif
                   </div>

@@ -101,17 +101,23 @@
       .title {
         margin-top: 1.5rem;
       }
-    }
 
-    .card-three {
-      .title {
-        margin-bottom: 0.875rem;
+      figure {
+        min-width: 228px;
       }
     }
 
-    .card-four,
     .card-three {
-      padding: 0.875rem 0.875rem 0;
+      padding: 1.563rem 1.563rem 0;
+
+      .title {
+        margin-bottom: 1.563rem;
+        margin-right: 1.563rem;
+      }
+    }
+
+    .card-four {
+      padding: 1.563rem 1.563rem 0;
     }
   }
 }

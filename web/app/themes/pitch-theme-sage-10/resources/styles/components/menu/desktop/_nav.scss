@@ -104,19 +104,21 @@
 
                   li {
                     &.menu-item {
-                      padding: 10px 0;
+                      padding: 5px 0;
 
                       a {
                         &.dropdown-item {
                           color: #2d2c2c;
                           font-size: 1rem;
                           font-weight: 400;
-                          padding: 0;
+                          padding: 0.875rem;
+                          border-radius: 5px;
+                          background-color: #f7f7f7;
 
                           &:hover,
                           &.active {
-                            color: black;
-                            background-color: transparent;
+                            color: white;
+                            background-color: $primary;
                           }
                         }
                       }

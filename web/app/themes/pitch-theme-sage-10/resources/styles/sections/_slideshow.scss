@@ -3,8 +3,20 @@
     &.style-one {
       overflow: hidden;
 
-      .section-title {
+      .wp-title {
         margin-bottom: 3rem;
+      }
+
+      .slideshow-arrows {
+        li {
+          display: flex;
+          width: 43px;
+          height: 43px;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid $primary;
+          border-radius: 5px;
+        }
       }
 
       .slideshow {

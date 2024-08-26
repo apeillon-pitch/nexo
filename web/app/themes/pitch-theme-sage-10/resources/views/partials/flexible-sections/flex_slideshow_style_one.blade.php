@@ -2,9 +2,21 @@
 <div id="section-{{ $row }}" class="section slideshow style-one {{ $options['oclasses'] }}">
   <div class="container">
     <div class="d-flex flex-column wp-content">
-      @if ($section['title_group']['title'])
-        @include('partials.template-parts.title', ['item' => $section['title_group'], 'class' => 'section-title'])
-      @endif
+      <div class="d-fex flex-row justify-content-between align-items-center wp-title">
+        @if ($section['title_group']['title'])
+          @include('partials.template-parts.title', ['item' => $section['title_group'], 'class' => 'section-title mb-0'])
+        @endif
+        <div class="slideshow-arrows">
+          <div class="d-flex flex-row justify-content-end align-items-center">
+            <li class="slick-arrow-prev">
+              <img src="@asset('images/arrow-slideshow.svg')" alt="flèche">
+            </li>
+            <li class="slick-arrow-next">
+              <img src="@asset('images/arrow-slideshow.svg')" alt="flèche">
+            </li>
+          </div>
+        </div>
+      </div>
       @if($section['item_repeater'])
         <div class="slideshow">
           @foreach($section['item_repeater'] as $item)

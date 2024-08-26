@@ -46,6 +46,29 @@
           background: linear-gradient(180deg, rgba(20, 45, 94, 0%) 48.28%, #142d5e 100%);
         }
 
+        .hover {
+          display: none;
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          left: 0;
+          text-align: center;
+          transform: translateY(-50%);
+        }
+
+        &:hover {
+          .hover {
+            display: flex;
+            z-index: 8889;
+          }
+
+          &::after {
+            z-index: 888;
+            background: linear-gradient(180deg, #142d5e 0%, #142d5e 100%);
+            transition: all 0.2s ease-in-out;
+          }
+        }
+
         span {
           position: relative;
           z-index: 88;

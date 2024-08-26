@@ -20,6 +20,7 @@
 
           .title {
             font-size: 1.25rem;
+            line-height: 120%;
 
             @include media-breakpoint-down(sm) {
               font-size: 1.5rem;

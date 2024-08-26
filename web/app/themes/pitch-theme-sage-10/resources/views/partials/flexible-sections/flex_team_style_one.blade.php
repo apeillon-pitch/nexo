@@ -12,12 +12,18 @@
               @foreach($item['team'] as $el)
                 @php $member = getMemberById($el); @endphp
                 <div class="slide">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#teamModal-{{ $loop->iteration }}">
-                    <div class="card-member" style="background-image: url({{ $member['picture'] }})">
+                  <div class="card-member" style="background-image: url({{ $member['picture'] }})">
+                    <span class="name">{!! $member['title'] !!}</span>
+                    <span class="job">{!! $member['job'] !!} </span>
+                    <div class="hover flex-column justify-content-center">
                       <span class="name">{!! $member['title'] !!}</span>
-                      <span class="job">{!! $member['job'] !!} </span>
+                      <div>
+                        <a href="#" class="btn btn-secondary" data-bs-toggle="modal"
+                           data-bs-target="#teamModal-{{ $loop->iteration }}">En savoir
+                          plus</a>
+                      </div>
                     </div>
-                  </a>
+                  </div>
                 </div>
               @endforeach
             </div>

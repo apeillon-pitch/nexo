@@ -73,13 +73,18 @@ const main = async (err) => {
       var $slideshow = $($section).find('.slideshow');
 
       if (!$slideshow.hasClass('slick-initialized')) {
+        var slickPrev = $section.find('#slick-prev');
+        var slickNext = $section.find('#slick-next');
+
         $slideshow.slick({
           slidesToShow: 4,
           slidesToScroll: 1,
           dots: false,
           infinite: false,
-          arrows: false,
+          arrows: true,
           autoplay: false,
+          nextArrow: slickNext,
+          prevArrow: slickPrev,
           responsive: [
             {
               breakpoint: 1024,

@@ -2,18 +2,18 @@
 <div id="section-{{ $row }}" class="section slideshow style-one {{ $options['oclasses'] }}">
   <div class="container">
     <div class="d-flex flex-column wp-content">
-      <div class="d-fex flex-row justify-content-between align-items-center wp-title">
+      <div class="d-flex flex-row justify-content-between align-items-center wp-title">
         @if ($section['title_group']['title'])
           @include('partials.template-parts.title', ['item' => $section['title_group'], 'class' => 'section-title mb-0'])
         @endif
-        <div class="slideshow-arrows">
-          <div class="d-flex flex-row justify-content-end align-items-center">
-            <li class="slick-arrow-prev">
-              <img src="@asset('images/arrow-slideshow.svg')" alt="flèche">
-            </li>
-            <li class="slick-arrow-next">
-              <img src="@asset('images/arrow-slideshow.svg')" alt="flèche">
-            </li>
+        <div class="slideshow-arrows d-flex flex-row justify-content-end align-items-center">
+          <div id="slick-prev" class="arrow slick-arrow-prev">
+            <img src="@asset('images/arrow-slideshow.svg')" alt="flèche" class="blue">
+            <img src="@asset('images/arrow-slideshow-white.svg')" alt="flèche" class="white">
+          </div>
+          <div id="slick-next" class="arrow slick-arrow-next">
+            <img src="@asset('images/arrow-slideshow.svg')" alt="flèche" class="blue">
+            <img src="@asset('images/arrow-slideshow-white.svg')" alt="flèche" class="white">
           </div>
         </div>
       </div>

@@ -8,7 +8,9 @@
       }
 
       .slideshow-arrows {
-        li {
+        gap: 11px;
+
+        .arrow {
           display: flex;
           width: 43px;
           height: 43px;
@@ -16,6 +18,37 @@
           justify-content: center;
           border: 1px solid $primary;
           border-radius: 5px;
+
+          img {
+            &.blue {
+              display: block;
+            }
+
+            &.white {
+              display: none;
+            }
+          }
+
+          &.slick-arrow-prev {
+            img {
+              transform: rotate(180deg);
+            }
+          }
+
+          &:hover {
+            background-color: $primary;
+            transition: all 0.3s ease-in-out;
+
+            img {
+              &.blue {
+                display: none;
+              }
+
+              &.white {
+                display: block;
+              }
+            }
+          }
         }
       }
 

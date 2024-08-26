@@ -30,22 +30,12 @@
                     color: $primary;
                     font-weight: 600;
                     line-height: 100%;
-                    padding: 0;
-
-                    &::before {
-                      content: "";
-                      position: absolute;
-                      display: block;
-                      width: 0;
-                      height: 2px;
-                      left: 50%;
-                      transform: translateX(-50%);
-                      bottom: -3px;
-                      background-color: $primary;
-                      transition: all 0.3s ease-in-out;
-                    }
+                    padding: 0.875rem;
+                    border-radius: 5px;
+                    background-color: white;
 
                     &.dropdown-toggle {
+                      padding-right: 34px;
                       z-index: 888;
 
                       &::after {
@@ -53,8 +43,8 @@
                         position: absolute;
                         border: 0;
                         margin-left: 0;
-                        right: -20px;
-                        top: 40%;
+                        right: 14px;
+                        top: 47%;
                         transform: translateY(-50%);
                         vertical-align: inherit;
                         transition: all 0.2s;
@@ -63,24 +53,36 @@
 
                     &.dropdown-toggle.show {
                       &::after {
-                        content: url("../../../../images/fleche.svg");
-                        top: 59%;
+                        top: 54%;
+                        content: url("../../../../images/fleche-white.svg");
                         transform: translateY(-50%) rotate(180deg);
+                      }
+
+                      &:hover,
+                      &.active {
+                        &::after {
+                          top: 54%;
+                          content: url("../../../../images/fleche-white.svg");
+                          transform: translateY(-50%) rotate(180deg);
+                        }
+                      }
+                    }
+
+                    &.active {
+                      &.dropdown-toggle {
+                        &::after {
+                          top: 54%;
+                          content: url("../../../../images/fleche-white.svg");
+                          transform: translateY(-50%) rotate(180deg);
+                        }
                       }
                     }
 
                     &.dropdown-toggle.show,
                     &:hover,
                     &.active {
-                      &::before {
-                        width: 100%;
-                      }
-
-                      &::after {
-                        top: 59%;
-                        transform: translateY(-50%) rotate(180deg);
-                        transition: all 0.2s;
-                      }
+                      color: white;
+                      background-color: $primary;
                     }
                   }
                 }
@@ -95,7 +97,7 @@
 
                   div {
                     padding: 22px;
-                    border-radius: 0;
+                    border-radius: 5px;
                     background-color: #f7f7f7;
                     transition: all ease-in-out 0.3s;
                   }

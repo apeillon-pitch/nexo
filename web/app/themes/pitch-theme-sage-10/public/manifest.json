@@ -1,5 +1,5 @@
 {
-  "app.css": "css/app.bed478.css",
+  "app.css": "css/app.266b60.css",
   "app.js": "js/app.500c44.js",
   "menu.js": "js/menu.9d3e22.js",
   "editor.css": "css/editor.31d6cf.css",
@@ -56,7 +56,8 @@
   "images/Email.svg": "images/Email.05cd4b.svg",
   "images/arrow-blue.svg": "images/arrow-blue.de87a3.svg",
   "images/Email.png": "images/Email.af6f9c.png",
-  "images/fleche.svg": "images/fleche.d0bcb1.svg",
+  "images/fleche-white.svg": "images/fleche-white.ec8efa.svg",
+  "images/fleche.svg": "images/fleche.b56749.svg",
   "images/browserconfig.xml": "images/browserconfig.fbdd07.xml",
   "images/.gitkeep": "images/.gitkeep.31d6cf"
 }

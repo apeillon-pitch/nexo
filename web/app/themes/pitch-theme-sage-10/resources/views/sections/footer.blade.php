@@ -4,7 +4,7 @@
       <div class="col-12 col-lg-3">
         @if($footer['data']['logo'])
           <a href="{{ home_url() }}" aria-label="Accueil">
-            {!! wp_get_attachment_image( $footer['data']['logo']['id'], 'large','', array( "class" => "mb-4")) !!}
+            <img src="{{ $footer['data']['logo']['url'] }}" width="110" height="80" class="mb-4" alt="{!!  $footer['data']['logo']['alt'] !!}">
           </a>
         @endif
         @if($footer['data']['text'])

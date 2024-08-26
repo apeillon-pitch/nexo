@@ -307,6 +307,47 @@
                             "parent_repeater": "field_669a55f6884fe"
                         }
                     ]
+                },
+                {
+                    "key": "field_66cc3bbb5f64f",
+                    "label": "Lien(s)",
+                    "name": "link_repeater",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Ajouter un élément",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_66cc3bbb5f650",
+                            "label": "Lien",
+                            "name": "link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "parent_repeater": "field_66cc3bbb5f64f"
+                        }
+                    ]
                 }
             ]
         },
@@ -497,5 +538,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1721662057
+    "modified": 1724660690
 }

@@ -14,7 +14,7 @@
   <div class="wp-text">
     <div class="container">
       <div class="row justify-content-center justify-content-lg-start">
-        <div class="col-10 col-lg-6">
+        <div class="col-10 col-lg-7">
           @if($section['title'])
             <h1 class="section-title mb-0">{!! $section['title'] !!}</h1>
           @endif

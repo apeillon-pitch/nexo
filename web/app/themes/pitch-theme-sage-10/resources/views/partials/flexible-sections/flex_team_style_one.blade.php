@@ -16,7 +16,7 @@
                     <span class="name">{!! $member['title'] !!}</span>
                     <span class="job">{!! $member['job'] !!} </span>
                     <div class="hover flex-column justify-content-center">
-                      <span class="name">{!! $member['title'] !!}</span>
+                      <span class="name mb-3">{!! $member['title'] !!}</span>
                       <div>
                         <a href="#" class="btn btn-secondary" data-bs-toggle="modal"
                            data-bs-target="#teamModal-{{ $loop->iteration }}">En savoir

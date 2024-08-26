@@ -3,7 +3,7 @@
     @if ($header['data']['logo'])
       <div class="d-block">
         <a href="{{ home_url() }}" aria-label="Accueil">
-          {!! wp_get_attachment_image( $header['data']['logo']['id'], 'large','', array( "class" => "")) !!}
+          <img src="{{ $header['data']['logo']['url'] }}" width="110" height="80" alt="{!!  $header['data']['logo']['alt'] !!}">
         </a>
       </div>
     @endif

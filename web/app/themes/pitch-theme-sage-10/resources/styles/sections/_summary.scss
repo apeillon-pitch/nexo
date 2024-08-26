@@ -1,0 +1,10 @@
+.section {
+  &.summary {
+    .wp-content {
+      gap: 1rem;
+      padding: 3.125rem 3.938rem;
+      border-radius: 0.625rem;
+      border: 1px solid $primary;
+    }
+  }
+}

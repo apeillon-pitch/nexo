@@ -1101,6 +1101,105 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_66cc301b001a2": {
+                    "key": "layout_66cc301b001a2",
+                    "name": "flex_block_summary",
+                    "label": "Bloc sommaire (scrolling)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_66cc301b001a7",
+                            "label": "Sommaire",
+                            "name": "item_repeater",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 1,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Ajouter un item",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_66cc301b001a9",
+                                    "label": "Titre",
+                                    "name": "title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_66cc301b001a7"
+                                },
+                                {
+                                    "key": "field_66cc305b001af",
+                                    "label": "ID de la section",
+                                    "name": "section_id",
+                                    "aria-label": "",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "min": "",
+                                    "max": "",
+                                    "placeholder": "",
+                                    "step": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_66cc301b001a7"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_66cc301b001ae",
+                            "label": "Options",
+                            "name": "options",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_640060d625a21"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_669928c715b25": {
                     "key": "layout_669928c715b25",
                     "name": "flex_banner_cta_style_one",
@@ -1342,5 +1441,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1722331538
+    "modified": 1724657778
 }

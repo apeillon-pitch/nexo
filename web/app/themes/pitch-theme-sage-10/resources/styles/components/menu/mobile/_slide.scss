@@ -34,6 +34,10 @@
       border: none;
       color: black;
       background: white;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .dropdown-item.active {

@@ -9,9 +9,9 @@
                width="auto">
         </a>
       @endif
-      <button title="Fermer le menu" class="c-menu__close">
-        <i class="fa-light fa-xmark"></i>
-      </button>
+      <a class="c-menu__close" aria-label="Fermer le menu">
+        <img src="@asset('images/close.svg')" alt="Fermer le menu" width="24" height="24">
+      </a>
     </div>
     <nav id="navbar-mobile" class="nav-primary navbar">
       @if (has_nav_menu('primary_navigation'))

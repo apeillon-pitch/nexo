@@ -28,4 +28,59 @@
       }
     }
   }
+
+  &.text-table {
+    .wrapper-section {
+      gap: 50px;
+
+      .wrapper-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .heading-section {
+          margin-bottom: 1.25rem;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+
+      .wrapper-text {
+        gap: 1rem;
+        padding: 3.125rem 3.938rem;
+        border-radius: 0.625rem;
+        border: 1px solid $primary;
+
+        a {
+          &:hover {
+            color: $primary;
+          }
+        }
+
+        p {
+          font-size: 2rem;
+          font-style: italic;
+          text-align: center;
+
+          @include media-breakpoint-down(md) {
+            font-size: 1.25rem;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          em {
+            display: block;
+            font-size: 1.125rem;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
 }

@@ -46,9 +46,9 @@
       @endif
     </div>
     @if($footer['data']['link_repeater'])
-      <div class="d-flex flex-column flex-lg-row justify-content-between wp-legal">
+      <div class="d-flex flex-column flex-lg-row align-items-center align-items-md-start justify-content-md-between wp-legal">
         <span>Copyright © 2024 Nexo Capital - Tous droits réservés.</span>
-        <div class="d-flex flex-row wp-links mt-3 mt-lg-0">
+        <div class="d-flex flex-column flex-md-row wp-links mt-3 mt-lg-0">
           @foreach($footer['data']['link_repeater'] as $item)
             <a href="{{ $item['link']['url'] }}"
                aria-label="{!! $item['link']['title'] !!}" target="{{ $item['link']['target'] }}">

@@ -56,6 +56,10 @@ footer {
           transform: translateY(-50%);
           margin: 0 1rem;
           background-color: $primary;
+
+          @include media-breakpoint-down(md) {
+            content: none;
+          }
         }
 
         &:last-child {

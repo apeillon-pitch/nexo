@@ -35,12 +35,22 @@ footer {
     .wp-links {
       gap: 0;
 
+      @include media-breakpoint-down(md) {
+        gap: 8px;
+      }
+
       a {
         position: relative;
         color: $black;
         font-weight: 400;
         padding-right: 1rem;
         margin-right: 1rem;
+
+        @include media-breakpoint-down(md) {
+          padding-right: 0;
+          margin-right: 0;
+          text-align: center;
+        }
 
         &:hover {
           color: $primary;

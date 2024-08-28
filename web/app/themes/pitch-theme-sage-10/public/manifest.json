@@ -1,5 +1,5 @@
 {
-  "app.css": "css/app.fff03a.css",
+  "app.css": "css/app.ccda89.css",
   "app.js": "js/app.3256da.js",
   "menu.js": "js/menu.9d3e22.js",
   "editor.css": "css/editor.31d6cf.css",
@@ -55,6 +55,8 @@
   "images/briefcase.svg": "images/briefcase.ec0ea0.svg",
   "images/Email.svg": "images/Email.05cd4b.svg",
   "images/arrow-blue.svg": "images/arrow-blue.de87a3.svg",
+  "images/arrow-menu.svg": "images/arrow-menu.617557.svg",
+  "images/arrow-menu-primary.svg": "images/arrow-menu-primary.972358.svg",
   "images/Email.png": "images/Email.af6f9c.png",
   "images/arrow-slideshow.svg": "images/arrow-slideshow.19673f.svg",
   "images/arrow-slideshow-white.svg": "images/arrow-slideshow-white.3bd882.svg",

@@ -23,6 +23,23 @@
             font-weight: 600;
             line-height: 100%;
             padding: 0;
+
+            &::after {
+              content: url("../../../../images/arrow-menu-primary.svg");
+              display: block;
+              position: absolute;
+              border: 0;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%) rotate(270deg);
+            }
+
+            &.dropdown-toggle.show {
+              &::after {
+                transform: translateY(-50%) rotate(360deg);
+                transition: all 0.2s ease-in-out;
+              }
+            }
           }
         }
       }
@@ -42,8 +59,17 @@
               font-weight: 400;
               padding: 0;
 
+              &::after {
+                display: inline;
+                content: url("../../../../images/arrow-menu.svg");
+                right: inherit;
+                margin-left: 10px;
+                top: 63%;
+                transform: translateY(-50%) rotate(0deg);
+              }
+
               &:hover {
-                background-color: $mobile-dropdown-nav-item-color-hover;
+                background-color: white;
               }
             }
           }

@@ -8,48 +8,38 @@
       li {
         &.menu-item {
           display: block;
-          padding: 0.75rem 0;
+          padding: 1.5rem 0;
+          border-bottom: 1px solid $primary;
+
+          &:last-child {
+            border: 0;
+          }
 
           a {
             position: relative;
-            width: fit-content;
-            margin: 0 auto;
+            width: 100%;
+            font-size: 1.125rem;
             color: $primary;
             font-weight: 600;
             line-height: 100%;
-            text-align: center;
-
-            &::before {
-              content: "";
-              position: absolute;
-              display: block;
-              width: 0;
-              height: 2px;
-              left: 50%;
-              transform: translateX(-50%);
-              bottom: -3px;
-              background-color: $primary;
-              transition: all 0.3s ease-in-out;
-            }
-
-            &:hover,
-            &.active {
-              &::before {
-                width: 100%;
-              }
-            }
+            padding: 0;
           }
         }
       }
 
       .dropdown-menu {
         padding-left: 0;
-        background-color: $mobile-bg-dropdown-menu;
+        border: 0;
+        background-color: white;
 
         li {
           &.menu-item {
+            padding: 0.75rem 0;
+            border-bottom: none;
+
             a {
-              color: $mobile-dropdown-nav-item-color;
+              color: black;
+              font-weight: 400;
               padding: 0;
 
               &:hover {

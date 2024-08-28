@@ -8,6 +8,12 @@
           gap: 0.75rem;
         }
 
+        .section-title {
+          @include media-breakpoint-down(sm) {
+            font-size: 1.75rem;
+          }
+        }
+
         p {
           margin-bottom: 0;
         }

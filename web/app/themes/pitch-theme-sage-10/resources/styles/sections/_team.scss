@@ -6,6 +6,10 @@
           margin-left: 0;
           gap: 1rem;
 
+          .slide {
+            min-width: 271px;
+          }
+
           &::before,
           &::after {
             content: none;

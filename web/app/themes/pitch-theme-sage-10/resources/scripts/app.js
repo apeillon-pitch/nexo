@@ -35,7 +35,7 @@ const main = async (err) => {
           slidesToScroll: 1,
           dots: false,
           infinite: false,
-          arrows: false,
+          arrows: true,
           autoplay: false,
           responsive: [
             {

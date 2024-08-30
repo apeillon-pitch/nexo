@@ -13,7 +13,7 @@
       @endif
       @if($section['image'])
         <div class="row justify-content-center">
-          <div class="col-11 col-md-10 col-lg-9 col-xl-8 col-xx-7">
+          <div class="col-11 col-lg-10 col-xl-9 col-xxl-8">
             <figure class="mb-0">
               {!! wp_get_attachment_image($section['image']['id'], 'large', '', array("class" => "img-fluid d-block mx-auto")) !!}
             </figure>

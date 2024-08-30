@@ -6,13 +6,6 @@
           margin-left: 0;
           gap: 1rem;
 
-          .slide {
-            @include media-breakpoint-down(lg) {
-              min-width: 271px;
-              max-width: 271px;
-            }
-          }
-
           &::before,
           &::after {
             content: none;
@@ -41,11 +34,6 @@
         background-size: cover;
         background-position: center center;
         overflow: hidden;
-
-        @include media-breakpoint-down(lg) {
-          width: 271px;
-          min-width: 271px;
-        }
 
         &::after {
           content: "";

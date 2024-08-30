@@ -12,9 +12,13 @@
         @include('partials.template-parts.cta', ['item' => $section['cta_group']], ['class' => 'btn-secondary mt-4'])
       @endif
       @if($section['image'])
-        <figure class="mb-0">
-          {!! wp_get_attachment_image($section['image']['id'], 'large', '', array("class" => "img-fluid d-block mx-auto")) !!}
-        </figure>
+        <div class="row justify-content-center">
+          <div class="col-11 col-md-10 col-lg-9 col-xl-8 col-xx-7">
+            <figure class="mb-0">
+              {!! wp_get_attachment_image($section['image']['id'], 'large', '', array("class" => "img-fluid d-block mx-auto")) !!}
+            </figure>
+          </div>
+        </div>
       @endif
     </div>
   </div>

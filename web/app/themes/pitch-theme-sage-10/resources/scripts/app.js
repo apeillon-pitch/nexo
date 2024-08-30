@@ -33,7 +33,7 @@ const main = async (err) => {
         $slideshow.slick({
           slidesToShow: 4,
           slidesToScroll: 1,
-          dots: false,
+          dots: true,
           infinite: false,
           arrows: true,
           autoplay: false,
@@ -41,27 +41,29 @@ const main = async (err) => {
             {
               breakpoint: 1024,
               settings: {
-                arrows: true,
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: false,
+                arrows: true,
                 dots: true,
               },
             },
             {
               breakpoint: 600,
               settings: {
-                arrows: true,
                 slidesToShow: 2,
                 slidesToScroll: 2,
+                arrows: true,
+                dots: true,
               },
             },
             {
               breakpoint: 480,
               settings: {
-                arrows: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                arrows: true,
+                dots: true,
               },
             },
           ],

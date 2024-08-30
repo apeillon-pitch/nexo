@@ -18,6 +18,12 @@
           border-radius: 0.625rem;
           padding: 1.5rem 0.2rem;
 
+          &.five {
+            @include media-breakpoint-down(lg) {
+              padding: 1.5rem 4rem;
+            }
+          }
+
           .title {
             font-size: 1.25rem;
             line-height: 120%;

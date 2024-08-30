@@ -12,8 +12,9 @@
           @php $class = 'major' @endphp
         @endif
         <div class="row wp-list">
+          @php $c = count($section['item_repeater']) @endphp
           @foreach($section['item_repeater'] as $item)
-            @include('partials.template-parts.block-repeater.style-one', ['item' => $item, 'class' => $class])
+            @include('partials.template-parts.block-repeater.style-one', ['item' => $item, 'class' => $class, 'c' => $c])
           @endforeach
         </div>
       @endif

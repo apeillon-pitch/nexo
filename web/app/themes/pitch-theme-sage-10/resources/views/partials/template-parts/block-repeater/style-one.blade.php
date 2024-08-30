@@ -1,5 +1,5 @@
 <div class="col-12 col-sm">
-  <div class="d-flex flex-column align-items-center wp-item {{ $class }}">
+  <div class="d-flex flex-column align-items-center wp-item {{ $class }} {{ $c === 5 ? 'five' : '' }}">
     @if($item['icon'])
       <figure class="mb-0">
         {!! wp_get_attachment_image($item['icon']['id'], 'medium', '', array("class" => "img-fluid")) !!}

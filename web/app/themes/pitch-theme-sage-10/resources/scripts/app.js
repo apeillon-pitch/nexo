@@ -33,7 +33,7 @@ const main = async (err) => {
         $slideshow.slick({
           slidesToShow: 4,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
           infinite: false,
           arrows: true,
           autoplay: false,
@@ -45,7 +45,7 @@ const main = async (err) => {
                 slidesToScroll: 3,
                 infinite: false,
                 arrows: true,
-                dots: true,
+                dots: false,
               },
             },
             {
@@ -54,7 +54,7 @@ const main = async (err) => {
                 slidesToShow: 2,
                 slidesToScroll: 2,
                 arrows: true,
-                dots: true,
+                dots: false,
               },
             },
             {
@@ -63,7 +63,7 @@ const main = async (err) => {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: true,
-                dots: true,
+                dots: false,
               },
             },
           ],

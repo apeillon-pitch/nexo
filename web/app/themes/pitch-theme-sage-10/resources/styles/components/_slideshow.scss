@@ -22,4 +22,9 @@
   .slideshow.slick-initialized {
     visibility: visible;
   }
+
+  .slick-next::before,
+  .slick-prev::before {
+    color: $primary;
+  }
 }

@@ -2,10 +2,11 @@
 
 // BEGIN iThemes Security - Ne modifiez pas ou ne supprimez pas cette ligne
 // iThemes Security Config Details: 2
+define( 'FORCE_SSL_ADMIN', true ); // Rediriger toutes les requêtes de pages de HTTP vers HTTPS - Sécurité > Réglages > Forcer le SSL
 define( 'DISALLOW_FILE_EDIT', true ); // Désactivez l’éditeur de code - Solid Security > Réglages > Ajustements WordPress > Éditeur de code
 // END iThemes Security - Ne modifiez pas ou ne supprimez pas cette ligne
 
-define( 'ITSEC_ENCRYPTION_KEY', 'SmlJR2xuVj9DczRsPCBNPllpZHNKOjRrLiYkO3M6bm9yKmMgd2UyRX1RdWA5WC9wd2FLRSF6LGczZFo9OlpaNQ==' );
+define( 'ITSEC_ENCRYPTION_KEY', 'Oi5APEAhUSYyUUg+LC9uP2dkO0ZvUl0kWSRdRmxWfjJTOWJeMG50Jm1mO2ptczNDeyBiICAkVSRNVWEzZkBDYw==' );
 
 define( 'WP_CACHE', true ); // Added by WP Rocket
 

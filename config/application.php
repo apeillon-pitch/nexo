@@ -148,6 +148,3 @@ if ( env( 'WP_ROCKET_EMAIL' ) ) {
 define( 'WP_HTTP_BLOCK_EXTERNAL', false );
 
 define( 'WP_ACCESSIBLE_HOSTS', 'wp-rocket.me,*wp-rocket.me,*.wordpress.org,localhost' );
-
-// Disable 2 factor authetification
-Config::define('ITSEC_DISABLE_TWO_FACTOR', true);

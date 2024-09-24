@@ -15,3 +15,6 @@ use Roots\WPConfig\Config;
  */
 
 Config::define('DISALLOW_INDEXING', true);
+
+// Disable 2 factor authetification
+Config::define('ITSEC_DISABLE_TWO_FACTOR', true);

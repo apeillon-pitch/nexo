@@ -31,6 +31,7 @@ class App extends Composer
             'siteName' => $this->siteName(),
             'heroData' => $this->heroData(),
             'sectionData' => $this->sectionData(),
+            'options_data' => $this->optionsData(),
         ];
     }
 
@@ -107,6 +108,20 @@ class App extends Composer
     public function sectionData()
     {
         $data = get_field('flexible_content');
+        return $data;
+    }
+
+    /**
+     * Options
+     *
+     * @return array
+     */
+    public function optionsData()
+    {
+        $modal_disclaimer_group = get_field('modal_disclaimer_group', 'options');
+        $data = array(
+            'modal_disclaimer' => $modal_disclaimer_group,
+        );
         return $data;
     }
 

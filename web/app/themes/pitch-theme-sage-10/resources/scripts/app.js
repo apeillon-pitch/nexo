@@ -1,8 +1,10 @@
 import {domReady} from '@roots/sage/client';
 import $ from 'jquery';
-import 'bootstrap';
+import * as bootstrap from 'bootstrap';
 import './slide-menu';
 import 'select2';
+
+window.bootstrap = require('bootstrap');
 
 /**
  * Addons
@@ -18,11 +20,57 @@ const main = async (err) => {
     console.error(err);
   }
 
+  checkCookie();
   slideshowTeam();
   slideshowStyleOne();
   setSelect2();
   dropdownMenu();
   getStickyMenu();
+
+  function checkCookie() {
+    const disclaimer = getCookie('disclaimer');
+    const disclaimerModal = new bootstrap.Modal(
+      document.querySelector('#disclaimerModal'),
+      {
+        keyboard: false,
+      },
+    );
+
+    if (!disclaimer) {
+      disclaimerModal.show();
+      setCookie('disclaimer', 1);
+    }
+  }
+
+  function getCookie(cname) {
+    const name = `${cname}=`;
+    const cookies = document.cookie.split(';');
+
+    for (const cookie of cookies) {
+      const trimmedCookie = cookie.trim();
+      if (trimmedCookie.startsWith(name)) {
+        return trimmedCookie.substring(name.length);
+      }
+    }
+
+    return '';
+  }
+
+  function setCookie(name, value) {
+    const date = new Date();
+    date.setMonth(date.getMonth() + 13);
+    const expires = '; expires=' + date.toGMTString();
+
+    if (value.length === 0) {
+      document.cookie = `${name}=${JSON.stringify(
+        value,
+      )};expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/`;
+    } else {
+      document.cookie = `${name}=${JSON.stringify(
+        value,
+      )}${expires}; path=/`;
+    }
+  }
 
   function slideshowTeam() {
     $('.section.team').each(function () {
@@ -187,7 +235,7 @@ const main = async (err) => {
       }
     }
 
-    w.addEventListener('scroll', function() {
+    w.addEventListener('scroll', function () {
       w.requestAnimationFrame(menuIsStuck);
     });
   }

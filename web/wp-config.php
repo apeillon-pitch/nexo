@@ -2,7 +2,6 @@
 
 // BEGIN iThemes Security - Ne modifiez pas ou ne supprimez pas cette ligne
 // iThemes Security Config Details: 2
-define( 'FORCE_SSL_ADMIN', true ); // Rediriger toutes les requêtes de pages de HTTP vers HTTPS - Sécurité > Réglages > Forcer le SSL
 define( 'DISALLOW_FILE_EDIT', true ); // Désactivez l’éditeur de code - Solid Security > Réglages > Ajustements WordPress > Éditeur de code
 // END iThemes Security - Ne modifiez pas ou ne supprimez pas cette ligne
 

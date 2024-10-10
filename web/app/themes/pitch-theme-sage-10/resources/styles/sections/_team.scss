@@ -21,6 +21,10 @@
         }
       }
 
+      .wp-list {
+        --bs-gutter-y: 1.5rem;
+      }
+
       .card-member {
         display: flex;
         flex-direction: column;

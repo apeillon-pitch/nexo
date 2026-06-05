@@ -29,6 +29,8 @@ class App extends Composer
             'footer' => $this->footerData(),
             'mainMenu' => $this->mainMenu(),
             'siteName' => $this->siteName(),
+            'disclaimer' => $this->disclaimerData(),
+            'siteAlert' => $this->siteAlertData(),
             'heroData' => $this->heroData(),
             'sectionData' => $this->sectionData(),
             'options_data' => $this->optionsData(),
@@ -98,6 +100,53 @@ class App extends Composer
     {
         $data = get_field('hero_content');
         return $data;
+    }
+
+    /**
+     * Section data
+     *
+     * @return array
+     */
+    public function disclaimerData()
+    {
+        $data = get_field('disclaimer_group', 'options');
+        return $data;
+    }
+
+    /**
+     * Site alert banner.
+     *
+     * @return array|null
+     */
+    public function siteAlertData()
+    {
+        if (!function_exists('get_field')) {
+            return null;
+        }
+
+        $data = get_field('site_alert_banner_group', 'options');
+
+        if (empty($data['enabled']) || empty($data['title']) || empty($data['text'])) {
+            return null;
+        }
+
+        $displayScope = $data['display_scope'] ?? 'home';
+
+        if ($displayScope === 'home' && !is_front_page()) {
+            return null;
+        }
+
+        $contentHash = substr(sha1(wp_json_encode([
+            'title' => $data['title'],
+            'text' => $data['text'],
+            'display_scope' => $displayScope,
+        ])), 0, 12);
+
+        return [
+            'id' => 'site-alert-' . $contentHash,
+            'title' => $data['title'],
+            'text' => $data['text'],
+        ];
     }
 
     /**

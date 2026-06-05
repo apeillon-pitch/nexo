@@ -20,12 +20,40 @@ const main = async (err) => {
     console.error(err);
   }
 
+  setupSiteAlert();
   checkCookie();
   slideshowTeam();
   slideshowStyleOne();
   setSelect2();
   dropdownMenu();
   getStickyMenu();
+
+  function setupSiteAlert() {
+    const alert = document.querySelector('[data-site-alert]');
+
+    if (!alert) {
+      return;
+    }
+
+    const alertId = alert.getAttribute('data-site-alert-id');
+    const storageKey = `siteAlertClosed:${alertId}`;
+
+    if (window.localStorage.getItem(storageKey) === '1') {
+      alert.setAttribute('hidden', 'hidden');
+      return;
+    }
+
+    const closeButton = alert.querySelector('[data-site-alert-close]');
+
+    if (!closeButton) {
+      return;
+    }
+
+    closeButton.addEventListener('click', function () {
+      window.localStorage.setItem(storageKey, '1');
+      alert.setAttribute('hidden', 'hidden');
+    });
+  }
 
   function checkCookie() {
     const disclaimer = getCookie('disclaimer');
